@@ -374,12 +374,12 @@ const Home: FC = () => {
             </>
           )}
           <div className="transition-colors flex flex-col text-4xl font-medium ml-auto content-end text-end">
-            <span className="my-1 flex text-6xl align-middle font-normal">應到人數</span>
+            <span className="text-2xl opacity-75">應到人數</span>
             <span>
               {attendance.total}
               <span className="text-2xl"> 人</span>
             </span>
-            <span className="my-1 flex text-6xl align-middle font-normal">實到人數</span>
+            <span className="text-2xl opacity-75">實到人數</span>
             <span>
               {attendance.present != attendance.total ? (
                 <span className="text-2xl text-red-400">
