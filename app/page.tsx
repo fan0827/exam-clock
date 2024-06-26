@@ -248,31 +248,6 @@ const Home: FC = () => {
   }, [currentTime, examSchedule]);
 
   return (
-    <>
-      <div className="transition-colors absolute flex w-full top-0 left-0 p-2 text-xs text-gray-400 dark:text-gray-300 font-bold">
-        Maintain By{" "}
-        <a
-          href="https://github.com/smitug01"
-          className="text-blue-400 hover:bg-blue-200 rounded-lg transition-all"
-        >
-          &nbsp;@smitug01&nbsp;
-        </a>{" "}
-        &{" "}
-        <a
-          href="https://github.com/kevin0216"
-          className="text-blue-400 hover:text-blue-500"
-        >
-          &nbsp;@kevin0216
-        </a>
-        {screenfull.isFullscreen ? (
-          <a className="ml-2 px-1 rounded bg-orange-500 dark:bg-orange-600 text-white">
-            <FontAwesomeIcon icon={faExpand} className={"sm:mr-1"} />
-            <p className="max-sm:hidden">
-              目前正在全螢幕模式下，按 F11, Esc 或右方按鈕來離開
-            </p>
-          </a>
-        ) : (
-          <></>
         )}
         <button
           className="ml-auto text-end text-gray-400 hover:text-gray-600 dark:text-gray-300 active:text-gray-500"
@@ -359,12 +334,12 @@ const Home: FC = () => {
                       : ""
                   } max-h-64 hover:max-h-88`}
                 >
-                  <h2 className="text-4xl mb-2">今天的考程表</h2>
+                  <h2 className="text-4xl mb-2">今天的考程表:D</h2>
                   <ul>{getSchedule()}</ul>
                 </span>
               ) : (
                 <span>
-                  <h2 className="text-4xl mb-2">今日已無更多考試項目</h2>
+                  <h2 className="text-4xl mb-2">今日已無更多考試項目😊</h2>
                   <ul className="text-normal opacity-60">
                     點擊<span className="font-bold">「編輯考程及人數」</span>
                     來新增更多考試項目
@@ -374,7 +349,7 @@ const Home: FC = () => {
             </>
           )}
           <div className="transition-colors flex flex-col text-4xl font-medium ml-auto content-end text-end">
-            <span className="text-2xl opacity-75">應到人數</span>
+            <span className="my-1 flex text-6xl align-middle font-normal">應到人數</span>
             <span>
               {attendance.total}
               <span className="text-2xl"> 人</span>
