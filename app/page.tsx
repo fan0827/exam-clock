@@ -250,27 +250,6 @@ const Home: FC = () => {
   return (
     <>
       <div className="transition-colors absolute flex w-full top-0 left-0 p-2 text-xs text-gray-400 dark:text-gray-300 font-bold">
-        Maintain By{" "}
-        <a
-          href="https://github.com/smitug01"
-          className="text-blue-400 hover:bg-blue-200 rounded-lg transition-all"
-        >
-          &nbsp;@smitug01&nbsp;
-        </a>{" "}
-        &{" "}
-        <a
-          href="https://github.com/kevin0216"
-          className="text-blue-400 hover:text-blue-500"
-        >
-          &nbsp;@kevin0216
-        </a>
-        {screenfull.isFullscreen ? (
-          <a className="ml-2 px-1 rounded bg-orange-500 dark:bg-orange-600 text-white">
-            <FontAwesomeIcon icon={faExpand} className={"sm:mr-1"} />
-            <p className="max-sm:hidden">
-              目前正在全螢幕模式下，按 F11, Esc 或右方按鈕來離開
-            </p>
-          </a>
         ) : (
           <></>
         )}
