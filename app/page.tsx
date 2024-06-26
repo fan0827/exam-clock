@@ -252,17 +252,17 @@ const Home: FC = () => {
       <div className="transition-colors absolute flex w-full top-0 left-0 p-2 text-xs text-gray-400 dark:text-gray-300 font-bold">
           {" "}
         <a
-          href="https://github.com/smitug01"
+          href="#"
           className="text-blue-400 hover:bg-blue-200 rounded-lg transition-all"
         >
-          &nbsp;@smitug01&nbsp;
+          &nbsp;&nbsp;
         </a>{" "}
-        &{" "}
+        {" "}
         <a
-          href="https://github.com/kevin0216"
+          href="#"
           className="text-blue-400 hover:text-blue-500"
         >
-          &nbsp;@kevin0216
+          &nbsp;
         </a>
         {screenfull.isFullscreen ? (
           <a className="ml-2 px-1 rounded bg-orange-500 dark:bg-orange-600 text-white">
