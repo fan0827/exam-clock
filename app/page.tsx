@@ -250,18 +250,14 @@ const Home: FC = () => {
   return (
     <>
       <div className="transition-colors absolute flex w-full top-0 left-0 p-2 text-xs text-gray-400 dark:text-gray-300 font-bold">
-          {" "}
+        {" "}
         <a
           href="#"
           className="text-blue-400 hover:bg-blue-200 rounded-lg transition-all"
         >
           &nbsp;&nbsp;
         </a>{" "}
-        {" "}
-        <a
-          href="#"
-          className="text-blue-400 hover:text-blue-500"
-        >
+        <a href="#" className="text-blue-400 hover:text-blue-500">
           &nbsp;
         </a>
         {screenfull.isFullscreen ? (
