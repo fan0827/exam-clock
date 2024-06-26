@@ -334,7 +334,7 @@ const Home: FC = () => {
               {currentExam.subject}
             </div>
           )}
-          <div style="font-size:300px;" className="text-9xl mb-2 font-black text-black dark:text-white">
+          <div className="text-9xl mb-2 font-black text-black dark:text-white">
             {currentTime.toLocaleTimeString("en-US", { hour12: false })}
           </div>
           <br />
